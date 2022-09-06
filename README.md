@@ -15,16 +15,16 @@ name: "job-name",
 input_location: "environment/job-name/input.csv", #input location on the s3 bucket
 action: "running", #the current state of the job
 status: #JobStatus representing the current state of a Job
-	active: 1 #The number of actively running pods
-	completionTime: 2019-10-12T07:20:50.52Z #Represents time when the job was completed. It is not guaranteed to be set in happens-before order across separate operations
-	startTime: 2019-10-12T07:15:43.39Z #Represents time when the job was acknowledged by the job controller.
-	failed: 0 #The number of pods which reached phase Failed
-	succeeded 1 #The number of pods which reached phase Succeeded
+  active: 1 #The number of actively running pods
+  completionTime: 2019-10-12T07:20:50.52Z #Represents time when the job was completed. It is not guaranteed to be set in happens-before order across separate operations
+  startTime: 2019-10-12T07:15:43.39Z #Represents time when the job was acknowledged by the job controller.
+  failed: 0 #The number of pods which reached phase Failed
+  succeeded 1 #The number of pods which reached phase Succeeded
 environment: test, 
 error:
-	message: #a message about the error
-	reason: #the reason for the error
-	code: #kubernetes provided error code
+  message: #a message about the error
+  reason: #the reason for the error
+  code: #kubernetes provided error code
 ```
 
 
